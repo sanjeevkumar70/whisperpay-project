@@ -1,0 +1,131 @@
+.features-section {
+  background: #ffffff;
+  padding:20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+
+  .features-container {
+    max-width: 1050px;
+    margin: auto;
+
+    .features-heading {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 50px;
+      color: #000000;
+      animation: fadeDown 1s ease forwards;
+    }
+
+    /* ✅ Grid Layout - 3 cards per row on desktop */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); // ✅ exactly 3 per row on large screens
+      gap: 30px;
+      margin: 0 auto;
+      margin-bottom: 60px;
+      justify-items: center;
+
+      /* 📱 Responsive breakpoints */
+      @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr); // ✅ 2 per row on tablets
+      }
+      @media (max-width: 600px) {
+        grid-template-columns: 1fr; // ✅ 1 per row on mobile
+      }
+    }
+
+    .feature-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding:  20px;
+      min-height: 230px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 0.8s ease forwards;
+      width: 100%;
+          max-width: 300px;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 30px rgba(74, 144, 226, 0.4);
+      }
+
+      .icon-box {
+        font-size: 2.5rem;
+        color: #4a90e2;
+        margin-bottom: 15px;
+        background: rgba(74, 144, 226, 0.12);
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #1a1a1a;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+
+    .cta-container {
+      .cta-text {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+      }
+
+      .cta-button {
+        background: #4a90e2;
+        color: white;
+        padding: 14px 32px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+          background: #357abd;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+/* 🌟 Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

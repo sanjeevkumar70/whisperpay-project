@@ -1,0 +1,130 @@
+.about-section {
+  background: linear-gradient(135deg, #f9fbff, #eef3ff);
+  padding: 80px 20px;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+
+  // Subtle floating animation background shapes
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: rgba(74, 144, 226, 0.15);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite alternate;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 250px;
+    height: 250px;
+    background: rgba(58, 123, 213, 0.12);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite alternate-reverse;
+  }
+
+  .about-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+    .about-heading {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #1a1a1a;
+      animation: fadeDown 1s ease forwards;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s ease forwards;
+
+      &.delay {
+        animation-delay: 0.5s;
+      }
+    }
+
+    .highlight-box {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      margin: 20px auto;
+      max-width: 700px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      transform: translateY(40px);
+      opacity: 0;
+      animation: slideUp 1.2s ease forwards;
+    }
+
+    .about-highlight {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 30px;
+      color: #4a90e2;
+      opacity: 0;
+      animation: zoomIn 1s ease forwards;
+      animation-delay: 0.8s;
+    }
+  }
+}
+
+/* 🌟 Animations */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(25px);
+  }
+}

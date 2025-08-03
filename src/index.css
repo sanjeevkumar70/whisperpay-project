@@ -1,0 +1,49 @@
+/* Global Color Variables */
+:root {
+    /* Primary Colors */
+    --primary-color: #f2673f;
+    --secondary-color: #09131f;
+    --primary-bg-dark: #1f2a36;
+
+    /* Sidebar */
+    --sidebar-bg: var(--primary-bg);
+    --sidebar-hover: rgba(255, 255, 255, 0.1);
+    --sidebar-active: var(--primary-color);
+
+    /* Text Colors */
+    --text-light: #ffffff;
+    --text-dark: #000000;
+    --text-muted: #bdc3c7;
+
+
+    /* Shadows */
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 12px;
+    }
+}

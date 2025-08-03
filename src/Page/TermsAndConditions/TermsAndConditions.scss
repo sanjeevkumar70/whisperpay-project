@@ -1,0 +1,102 @@
+.terms-section {
+  background: #f9fbfd;
+  padding:  20px;
+  font-family: "Poppins", sans-serif;
+
+  .terms-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .terms-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d47a1;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .terms-intro {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+
+  .terms-content {
+    .terms-block {
+      margin-bottom: 30px;
+      text-align: left;
+
+      h2 {
+        font-size: 1.4rem;
+        color: #1565c0;
+        margin-bottom: 10px;
+        border-left: 4px solid #64b5f6;
+        padding-left: 10px;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #444;
+        line-height: 1.7;
+      }
+    }
+  }
+
+  .terms-footer {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #777;
+    margin-top: 20px;
+    font-style: italic;
+  }
+
+  /* ✅ RESPONSIVE DESIGN */
+  @media (max-width: 768px) {
+    .terms-container {
+      padding: 30px 25px;
+    }
+    .terms-title {
+      font-size: 2rem;
+    }
+    .terms-intro {
+      font-size: 1rem;
+    }
+    .terms-block h2 {
+      font-size: 1.3rem;
+    }
+    .terms-block p {
+      font-size: 0.95rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 50px 15px;
+
+    .terms-container {
+      padding: 25px 20px;
+    }
+    .terms-title {
+      font-size: 1.7rem;
+    }
+    .terms-intro {
+      font-size: 0.95rem;
+    }
+    .terms-block h2 {
+      font-size: 1.2rem;
+    }
+    .terms-block p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .terms-footer {
+      font-size: 0.85rem;
+    }
+  }
+}

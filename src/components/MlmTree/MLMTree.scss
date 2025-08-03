@@ -1,0 +1,134 @@
+.mlm-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  overflow-x: auto; /* ✅ Allow horizontal scroll if tree is wide */
+
+  .mlm-tree {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+
+    .member-card {
+      background: #e3f2fd;
+      border: 2px solid #64b5f6;
+      border-radius: 8px;
+      padding: 10px 15px;
+      display: inline-block;
+      min-width: 100px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+      .member-name {
+        font-weight: bold;
+        color: #0d47a1;
+        font-size: 1rem;
+      }
+
+      .member-level {
+        font-size: 0.85rem;
+        color: #555;
+      }
+    }
+
+    /* ✅ Downline styling */
+    .downline-wrapper {
+      margin-top: 30px;
+      position: relative;
+
+      /* vertical connector */
+      .connector {
+        width: 2px;
+        height: 20px;
+        background: #90caf9;
+        margin: 0 auto;
+      }
+
+      .downline {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 20px;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: -20px;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background: #90caf9;
+        }
+      }
+    }
+  }
+
+  /* ✅ RESPONSIVENESS */
+
+  @media (max-width: 1024px) {
+    .mlm-tree {
+      padding: 15px;
+      .downline {
+        gap: 25px; /* reduce spacing on tablets */
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 30px;
+
+    .mlm-tree {
+      padding: 10px;
+
+      .member-card {
+        min-width: 80px;
+        padding: 8px 12px;
+
+        .member-name {
+          font-size: 0.9rem;
+        }
+
+        .member-level {
+          font-size: 0.75rem;
+        }
+      }
+
+      .downline {
+        flex-wrap: wrap; /* ✅ allow wrapping on smaller screens */
+        gap: 20px;
+
+        &::before {
+          /* Optional: hide horizontal line when wrapping */
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 20px;
+
+    .mlm-tree {
+      padding: 5px;
+
+      .member-card {
+        min-width: 70px;
+        padding: 6px 10px;
+
+        .member-name {
+          font-size: 0.85rem;
+        }
+
+        .member-level {
+          font-size: 0.7rem;
+        }
+      }
+
+      .downline {
+        flex-direction: column; /* ✅ stack members vertically on mobile */
+        gap: 15px;
+      }
+    }
+  }
+}
