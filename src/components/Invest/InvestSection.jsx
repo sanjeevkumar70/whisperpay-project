@@ -13,7 +13,7 @@ export default function InvestSection() {
           Invest smartly and grow your business with Whisper.
         </p>
         <p className="description" data-aos="fade-up">
-          Start your network marketing journey with Whisper. Our all-in-one
+          Start your business journey with Whisper. Our all-in-one
           platform offers easy setup, referral systems, and secure payment
           options to help your business thrive and scale effortlessly.
         </p>
