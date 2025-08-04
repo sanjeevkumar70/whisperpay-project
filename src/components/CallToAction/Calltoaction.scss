@@ -1,0 +1,101 @@
+.cta-section {
+  text-align: center;
+  padding: 90px 20px;
+  // background: linear-gradient(135deg, #addaff, #ff8c42);
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+
+  /* ✅ Decorative background effect */
+  &::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(25deg);
+    animation: moveBg 8s linear infinite;
+  }
+
+  .cta-container {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    opacity: 0.95;
+  }
+
+  .cta-btn {
+    background: white;
+    color: #ff6600;
+    padding: 14px 35px;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #ffe7d1;
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  /* ✅ RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 135px 100px;
+    }
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .cta-btn {
+      font-size: 18px;
+      padding: 12px 28px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 70px 15px;
+
+    h2 {
+      font-size: 26px;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    .cta-btn {
+      font-size: 16px;
+      padding: 10px 24px;
+    }
+  }
+}

@@ -22,20 +22,22 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   useEffect(() => {
-    const navItem = document.querySelector('.header-section .header-container .navbar .nav-links.active');
-    const navBar = document.querySelector('.header-section .header-container .navbar');
     const header = document.querySelector('.header-section');
-
+    const navBar = document.querySelector('.header-section .header-container .navbar');
+    const navItem = document.querySelector('.header-section .header-container .navbar .nav-links.active');
     if (navItem && navBar) {
       navBar.style.background = "#000000";
+      navBar.style.padding = "8px 22px 30px 22px";
       header.style.top = "0";
     } else if (navBar) {
       navBar.style.background = "";
+      navBar.style.padding = "";
     }
   }, [menuOpen]);
 
@@ -88,9 +90,9 @@ export default function Navbar() {
 
             <div className={`nav-links ${menuOpen ? "active" : ""}`}>
               <NavLink to="/" className="nav-item" onClick={() => setMenuOpen(false)}>Home</NavLink>
-              <NavLink to="/about" className="nav-item" onClick={() => setMenuOpen(false)}>About</NavLink>
-              <NavLink to="/missions" className="nav-item" onClick={() => setMenuOpen(false)}>Missions</NavLink>
-              <NavLink to="/missions" className="nav-item" onClick={() => setMenuOpen(false)}>Blog</NavLink>
+              <NavLink to="/about-page" className="nav-item" onClick={() => setMenuOpen(false)}>About</NavLink>
+              <NavLink to="/missions-page" className="nav-item" onClick={() => setMenuOpen(false)}>Missions</NavLink>
+              <NavLink to="/blog-page" className="nav-item" onClick={() => setMenuOpen(false)}>Blog</NavLink>
               <NavLink to="/contact" className="nav-item" onClick={() => setMenuOpen(false)}>Contact</NavLink>
 
               {isLoggedIn ? (
@@ -102,8 +104,8 @@ export default function Navbar() {
                   Logout
                 </button>
               ) : (
-                <NavLink to="/login" className="nav-item login-btn" onClick={() => setMenuOpen(false)}>
-                  Login/Signup
+                <NavLink to="#" className="nav-item login-btn" onClick={() => setMenuOpen(false)}>
+                  Login
                 </NavLink>
               )}
             </div>

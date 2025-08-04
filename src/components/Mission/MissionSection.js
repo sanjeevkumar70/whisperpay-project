@@ -5,11 +5,11 @@ const MissionSection = () => {
   return (
     <section className="mission-section">
       <div className="mission-container">
-        <h2 className="mission-title">Our Mission</h2>
-        <p className="mission-tagline">
+        <h2 className="mission-title" data-aos="fade-up">Our Mission</h2>
+        <p className="mission-tagline" data-aos="fade-up">
           Empowering people. Building communities. Creating lasting wealth.
         </p>
-        <div className="mission-cards">
+        <div className="mission-cards" data-aos="fade-up">
           <div className="mission-card">
             <h3>🌱 Empower Individuals</h3>
             <p>

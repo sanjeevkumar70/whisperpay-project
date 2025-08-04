@@ -18,7 +18,7 @@
 
 .hero-section::before {
   // background: -webkit-linear-gradient(-90deg, #124656 0%, #063a4a 45%, #063b46 100%);
-  background-image: radial-gradient(circle 1000px at 95% 400px, #b7a2ed, transparent);
+  background-image: radial-gradient(circle 1000px at 95% 400px, #9f7cf7, transparent);
   position: absolute;
   top: 0;
   left: 0;
@@ -30,7 +30,7 @@
 
 .hero-content {
   color: #ffffff;
-  max-width: 650px;
+  max-width: 665px;
   margin: 0 auto;
   position: relative;
   z-index: 999;
@@ -66,156 +66,6 @@
 
 .hero-btn:hover {
   background-color: #f1f1f1;
-}
-
-/* ABOUT SECTION */
-.home-about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 20px;
-  gap: 30px;
-  flex-wrap: wrap;
-  background: #fff;
-}
-
-.about-text {
-  max-width: 500px;
-}
-
-.about-text h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.about-text p {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #555;
-}
-
-.learn-btn {
-  background-color: #ff6600;
-  color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.learn-btn:hover {
-  background-color: #e65c00;
-}
-
-.about-image img {
-  border-radius: 12px;
-  width: 400px;
-  height: auto;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.cta-section {
-  text-align: center;
-  padding: 90px 20px;
-  // background: linear-gradient(135deg, #addaff, #ff8c42);
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
-  color: white;
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  overflow: hidden;
-
-  /* ✅ Decorative background effect */
-  &::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(25deg);
-    animation: moveBg 8s linear infinite;
-  }
-
-  .cta-container {
-    position: relative;
-    z-index: 2;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-
-  h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
-
-  p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    line-height: 1.6;
-    opacity: 0.95;
-  }
-
-  .cta-btn {
-    background: white;
-    color: #ff6600;
-    padding: 14px 35px;
-    font-size: 20px;
-    font-weight: 600;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-
-    &:hover {
-      background: #ffe7d1;
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    }
-  }
-
-  /* ✅ RESPONSIVE */
-  @media (max-width: 768px) {
-    .hero-section{
-      padding: 135px 100px;
-    }
-    h2 {
-      font-size: 32px;
-    }
-
-    p {
-      font-size: 18px;
-    }
-
-    .cta-btn {
-      font-size: 18px;
-      padding: 12px 28px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    padding: 70px 15px;
-
-    h2 {
-      font-size: 26px;
-    }
-
-    p {
-      font-size: 16px;
-      margin-bottom: 25px;
-    }
-
-    .cta-btn {
-      font-size: 16px;
-      padding: 10px 24px;
-    }
-  }
 }
 
 /* ✅ Background animation keyframes */

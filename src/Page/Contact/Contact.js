@@ -81,7 +81,7 @@ export default function Contact() {
           <h2>📍 Get in Touch</h2>
           <p><strong>Email:</strong> support@whisperpay.in</p>
           <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
-          <p><strong>Support Timing:</strong> 10AM-6PM (MonSat)</p>
+          <p><strong>Support Timing:</strong> 10AM-6PM (Mon-Sat)</p>
           <p><strong>Address:</strong> 123 Ghaziabad, 201310 India</p>
         </div>
       </div>

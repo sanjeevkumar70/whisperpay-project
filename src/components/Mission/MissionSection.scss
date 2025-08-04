@@ -1,6 +1,6 @@
 .mission-section {
   background: linear-gradient(135deg, #e3f2fd, #ffffff);
-  padding: 80px 20px;
+  padding: 2rem;
   text-align: center;
   font-family: "Poppins", sans-serif;
 
@@ -14,6 +14,7 @@
     font-weight: 700;
     color: #0d47a1;
     margin-bottom: 10px;
+    margin-top: 0;
   }
 
   .mission-tagline {
@@ -34,7 +35,7 @@
     background: #ffffff;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     flex: 1 1 calc(33.33% - 20px);
     min-width: 260px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -53,7 +54,13 @@
 
     &:hover {
       transform: translateY(-8px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
+  }
+}
+
+@media (max-width:960px) {
+  .mission-section .mission-cards {
+    padding: 3rem;
   }
 }

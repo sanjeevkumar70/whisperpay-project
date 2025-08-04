@@ -1,4 +1,7 @@
+import CallToAction from "../../components/CallToAction/CallToAction";
 import FeaturesSection from "../../components/Features/FeaturesSection";
+import HowToGetStarted from "../../components/GetStart/HowToGetStarted";
+import InvestSection from "../../components/Invest/InvestSection";
 import MissionSection from "../../components/Mission/MissionSection";
 import MLMTree from "../../components/MlmTree/MLMTree";
 import "./Home.scss";
@@ -30,54 +33,25 @@ export default function Home() {
         ],
     };
 
-
     return (
         <>
-        
-            {/* Hero Section */}
             <section className="hero-section" data-aos="fade-up">
                 <div className="hero-content" >
-                    <h1>Let Your Earnings Whisper</h1>
-                    <p>
+                    <h1>Let Your Earnings at Whisper</h1>
+                    <p data-aos="fade-up">
                         Welcome to WhisperPay, a smart, silent reward system designed for consistent payouts without
                         noise, hype, or guesswork.
                         Join a powerful internal engine that automates reward cycles and builds your earnings passively - all
                         in the background
                     </p>
-                    <button className="hero-btn">Get Started</button>
+                    <button data-aos="fade-up" className="hero-btn">Get Started</button>
                 </div>
             </section>
-
-            {/* Features Section */}
+            <InvestSection/>
+            <CallToAction/>
+            <HowToGetStarted/>
             <FeaturesSection />
             <MissionSection />
-            <MLMTree member={data} />
-
-            {/* About Section */}
-            <section className="home-about" data-aos="fade-right">
-                <div className="about-text">
-                    <h2>About Us</h2>
-                    <p>
-                        We are committed to building a strong community through
-                        <strong> ethical network marketing</strong>. Our platform empowers individuals
-                        to learn, earn, and grow together — paving the way to a brighter future.
-                    </p>
-                    <button className="learn-btn">Learn More</button>
-                </div>
-                <div className="about-image" data-aos="zoom-in">
-                    <img src="https://source.unsplash.com/400x300/?teamwork,business" alt="About" />
-                </div>
-            </section>
-
-            {/* Call to Action Section */}
-            <section className="cta-section" data-aos="fade-up">
-                <h2>Start Your Journey Today</h2>
-                <p>
-                    Become a part of our thriving community and take the first step towards
-                    financial independence.
-                </p>
-                <button className="cta-btn">Join Now</button>
-            </section>
         </>
     );
 }

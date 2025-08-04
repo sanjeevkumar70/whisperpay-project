@@ -36,9 +36,10 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 MLM Company. All rights reserved.</p>
+        <p>© 2025 Whisper. All rights reserved.</p>
         <div className="footer-social">
-          <a href="https://facebook.com/mlmcompany" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+          <a href="https://facebook.com/mlmcompany" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style={{background:"red"}}>
+          </a>
           <a href="https://twitter.com/mlmcompany" target="_blank" rel="noopener noreferrer" aria-label="Twitter">TW</a>
           <a href="https://instagram.com/mlmcompany" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
         </div>
