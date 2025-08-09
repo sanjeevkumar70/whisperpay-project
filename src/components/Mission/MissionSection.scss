@@ -59,8 +59,26 @@
   }
 }
 
+
+
 @media (max-width:960px) {
   .mission-section .mission-cards {
     padding: 3rem;
+  }
+}
+
+@media (max-width:768px) {
+  .mission-section .mission-card {
+    min-width: 215px;
+  }
+}
+
+@media (max-width:576px) {
+  .mission-section {
+    padding: 1rem;
+  }
+
+  .mission-section .mission-cards {
+    padding: 0;
   }
 }

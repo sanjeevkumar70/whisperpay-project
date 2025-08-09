@@ -18,7 +18,8 @@
 }
 
 .login-form input[type="text"],
-.login-form input[type="password"] ,select{
+.login-form input[type="password"],
+select {
     margin: 8px 0;
     padding: 12px;
     font-size: 16px;
@@ -93,4 +94,11 @@
     color: red;
     font-size: 14px;
     margin: -5px 0 5px;
+}
+
+/* Smaller SweetAlert2 icon */
+
+
+.swal2-icon.swal2-icon-show {
+    margin: 20px auto 0 auto;
 }

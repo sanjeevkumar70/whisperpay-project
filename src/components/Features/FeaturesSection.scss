@@ -64,3 +64,9 @@
     padding: 4rem;
   }
 }
+
+@media (max-width:576px) {
+  .feature-grid {
+    padding: 1rem;
+  }
+}

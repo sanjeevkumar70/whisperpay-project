@@ -104,7 +104,7 @@ export default function Navbar() {
                   Logout
                 </button>
               ) : (
-                <NavLink to="#" className="nav-item login-btn" onClick={() => setMenuOpen(false)}>
+                <NavLink to="/login" className="nav-item login-btn" onClick={() => setMenuOpen(false)}>
                   Login
                 </NavLink>
               )}
